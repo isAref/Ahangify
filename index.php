@@ -1,9 +1,10 @@
 <?php
 
 include 'Telegram.php';
-$bot = new Telegram('');
-
 define('API_KEY', '');
+
+$bot = new Telegram('API_KEY');
+
 
 $result = $bot->getData(); 
 $text = $result['message']['text']; 
