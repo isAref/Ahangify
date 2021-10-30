@@ -23,3 +23,5 @@ $login = json_encode(['username' => 'UserName', 'password' => 'Password']);
 
 4. Now open the `login.php` in your browser
 > **NOTE**: that after opening the `login.php`, a file called `auth.txt` is created which contains the access token, restrict all access to the file and allow only ***read*** access to it.
+
+5. Set the webhook to `index.php`
