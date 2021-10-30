@@ -1,12 +1,8 @@
 <?php
 
 // @is_false
-$login = [
-  'username' => '', // UserName
-  'password' => '' // Password
-  ];
-  
-$data = json_encode($login);
+
+$login = json_encode(['username' => 'UserName', 'password' => 'Password']);
 
 $handle = curl_init();
 curl_setopt($handle, CURLOPT_URL, 'https://ahapi.site/login');
@@ -14,7 +10,7 @@ curl_setopt($handle, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($handle, CURLOPT_POST, 1);
 curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($handle, CURLOPT_SSL_VERIFYHOST, 0);
-curl_setopt($handle, CURLOPT_POSTFIELDS, $data);
+curl_setopt($handle, CURLOPT_POSTFIELDS, $login);
 curl_setopt($handle, CURLOPT_ENCODING,'gzip');
 
 $headers = [];
@@ -25,7 +21,7 @@ $headers[] = 'X-Mobile-App-Market: google-play';
 $headers[] = 'user-agent:Ahangify Mobile/1.7.3 (Samsung SM-A217F, Android 11 "30")';
 $headers[] = 'X-Language: en';
 $headers[] = 'Content-Type: application/json;charset=utf-8';
-$headers[] = 'Content-Length: '.strlen($data);
+$headers[] = 'Content-Length: '.strlen($login);
 
 curl_setopt($handle, CURLOPT_HTTPHEADER, $headers);
 $result = json_decode(curl_exec($handle));
