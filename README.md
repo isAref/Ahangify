@@ -16,13 +16,7 @@ define('API_KEY', 'TOKEN');
 * Login to [Ahangify](https://ahangify/login) and create an account
 * Open the `login.php` and Enter your username and password:
 ```php
-$login = [
-
-  'username' => 'UserName', // UserName
-
-  'password' => 'Password' // Password
-
-  ];
+$login = json_encode(['username' => 'UserName', 'password' => 'Password']);
   ```
   
   - We recommend that you use the model and name of your device for the **user agent**
