@@ -6,12 +6,12 @@
 Configuration:
 ---------
 
-* Open the `index.php` file and paste the bot token:
+1. Open the `index.php` file and paste the bot token:
 ```php
 define('API_KEY', 'TOKEN');
 ```
-* Login to [Ahangify](https://ahangify/login) and create an account
-* Open the `login.php` and Enter your username and password:
+2. Login to [Ahangify](https://ahangify/login) and create an account
+3. Open the `login.php` and Enter your username and password:
 ```php
 $login = json_encode(['username' => 'UserName', 'password' => 'Password']);
   ```
@@ -21,5 +21,5 @@ $login = json_encode(['username' => 'UserName', 'password' => 'Password']);
   user-agent:Ahangify Mobile/1.7.3 (Samsung SM-A217F, Android 11 "30")
   ```
 
-* Now open the `login.php` file in your browser
+4. Now open the `login.php` file in your browser
 > **NOTE**: that after opening the `login.php` file, a file called `auth.txt` is created which contains the access token, restrict all access to the file and allow only ***read*** access to it.
