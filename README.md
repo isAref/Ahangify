@@ -6,7 +6,7 @@
 Configuration:
 ---------
 
-1. Open the `index.php` file and paste the bot token:
+1. Open the `index.php` file and paste the bot token: **(Line 4)**
 ```php
 define('API_KEY', 'TOKEN');
 ```
