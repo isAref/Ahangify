@@ -21,5 +21,5 @@ $login = json_encode(['username' => 'UserName', 'password' => 'Password']);
   user-agent:Ahangify Mobile/1.7.3 (Samsung SM-A217F, Android 11 "30")
   ```
 
-4. Now open the `login.php` file in your browser
+4. Now open the `login.php` in your browser
 > **NOTE**: that after opening the `login.php` file, a file called `auth.txt` is created which contains the access token, restrict all access to the file and allow only ***read*** access to it.
