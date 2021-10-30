@@ -11,7 +11,7 @@ Configuration:
 define('API_KEY', 'TOKEN');
 ```
 2. Login to [Ahangify](https://ahangify/login) and create an account
-3. Open the `login.php` and Enter your username and password:
+3. Open the `login.php` and Enter your username and password: **(Line 5)**
 ```php
 $login = json_encode(['username' => 'UserName', 'password' => 'Password']);
   ```
