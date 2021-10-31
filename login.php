@@ -18,7 +18,8 @@ curl_setopt($handle, CURLOPT_POSTFIELDS, $login);
 
 $headers = [
   'Host: ahapi.site',
-  'Accept: application/json, text/plain, */*','X-Mobile-App-Version: 1.7.3',
+  'Accept: application/json, text/plain, */*',
+  'X-Mobile-App-Version: 1.7.3',
   'X-Mobile-App-Market: google-play',
   'user-agent:Ahangify Mobile/1.7.3 (Samsung SM-A217F, Android 11 "30")',
   'X-Language: en',
