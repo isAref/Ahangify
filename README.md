@@ -23,7 +23,7 @@ $login = json_encode(['username' => 'UserName', 'password' => 'Password']);
 
 4. Now open the `login.php` in your browser
 
-if the `• Login was successful: 45765*****` is displayed, it means that an **CSRF token** has been created
+* if the `• Login was successful: 45765*****` is displayed, it means that an **CSRF token** has been created
 
 
 5. Set the webhook to `index.php`
