@@ -46,12 +46,12 @@ if (file_exists('voice.ogg')) {
     curl_setopt($handle, CURLOPT_URL, $target);
     curl_setopt($handle, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($handle, CURLOPT_POST, 1);
-	  curl_setopt($handle, CURLOPT_POSTFIELDS, $Fields);
+curl_setopt($handle, CURLOPT_POSTFIELDS, $Fields);
     curl_setopt($handle, CURLOPT_CUSTOMREQUEST, 'POST');
     $headers = [
      'Accept: application/json, text/plain, */*',
      'X-Mobile-App-Version: 1.7.3',
-	    'X-Mobile-App-Market: google-play',
+'X-Mobile-App-Market: google-play',
      'user-agent: Ahangify Mobile/1.7.3 (Samsung SM-A217F, Android 11 "30")',
      'X-Language: en',
      'authorization:Bearer '.file_get_contents('auth.txt')
