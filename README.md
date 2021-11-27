@@ -8,7 +8,7 @@ Configuration:
 
 1. Open the `index.php` file and paste the bot token:
 ```php
-define('API_KEY', 'TOKEN');
+const API_KEY = 'TOKEN';
 ```
 2. Login to [Ahangify](https://ahangify/login) and create an account
 3. Open the `login.php` and Enter your username and password:
