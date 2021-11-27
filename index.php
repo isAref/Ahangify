@@ -1,4 +1,5 @@
 <?php
+
 error_reporting(E_ALL);
 
 /*
@@ -7,7 +8,7 @@ error_reporting(E_ALL);
 * Version: 1
 */
 
-define('API_KEY', 'TOKEN');
+const API_KEY = 'TOKEN';
 
 function req($method,$data = []) {
     $api = 'https://api.telegram.org/bot'.API_KEY.'/'.$method;
