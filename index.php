@@ -27,7 +27,7 @@ $Text = $update->message->text;
 $isVoice = $update->message->voice;
 $fileId = $update->message->voice->file_id;
 
-if ($Text == '/start') {
+if (preg_match('/^[\/\#\!\.]?(start)$/si', $Text)) {
   $content = ['chat_id' => $chatId, 'text' => '• Send your voice ...'];
   req('sendMessage', $content);
 }
