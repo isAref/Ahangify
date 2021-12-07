@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 
 const API_KEY = 'TOKEN';
 
-function req($method,$data = []) {
+function req($method, $data = []) {
     $api = 'https://api.telegram.org/bot'.API_KEY.'/'.$method;
     $handle = curl_init();
     curl_setopt($handle, CURLOPT_URL, $api);
