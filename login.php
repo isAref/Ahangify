@@ -33,7 +33,7 @@ curl_close($handle);
 
 file_put_contents('auth.txt', $result->access_token);
 chmod('auth.txt', 0400);
-echo "• Login was successful: $result->access_token";
+echo '• Login was successful: ' . "$result->access_token";
 
 /*
 * Author: Aref
