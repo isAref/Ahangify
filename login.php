@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 
 /*
 * Author: Aref
-* Telegram: @is_false
+* Telegram: @isDown
 * Version: 1
 */
 
@@ -37,6 +37,6 @@ echo '• Login was successful: ' . "$result->access_token";
 
 /*
 * Author: Aref
-* Telegram: @is_false
+* Telegram: @isDown
 * Version: 1
 */
