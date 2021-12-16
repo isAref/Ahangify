@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 
 /*
 * Author: Aref
-* Telegram: @isDown
+* Telegram: @is_false
 * Version: 1
 */
 
@@ -102,6 +102,6 @@ if (!empty($track_file->file)) {
 
 /*
 * Author: Aref
-* Telegram: @isDown
+* Telegram: @is_false
 * Version: 1
 */
