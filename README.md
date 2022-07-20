@@ -2,7 +2,8 @@
 
 
 
-**The files were deleted for some reason!**
+⚠️ **The files were deleted for some reason!**
+
 **Configuration:**
 ---------
 
